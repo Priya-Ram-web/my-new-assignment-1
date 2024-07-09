@@ -1,0 +1,45 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*banner section start*/
+.banner-container{
+    width: 1320px;
+    margin: 0 auto;
+    border: 2px red;
+    min-height: 600px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.528);
+    background-image: url("https://github.com/ProgrammingHero1/new-year-offer-resources/blob/main/images/Banner%20Image.png?raw=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    BA
+}
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+  
+
+}
+.banner-content p,h2{
+      color: white;
+      font-size: 72px;
+      font-weight: 900;
+    }
+      
+      .banner-content p {
+        font-size:32px ;
+         font-weight: 400;
+
+      }
+      .banner-content h1{
+        font-size:72px ;
+        font-weight: 900;
+        
+              }

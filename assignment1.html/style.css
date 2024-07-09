@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+/*start header part*/
+.name{
+    font-size: 28px;
+    color: rgb(13, 19, 33);
+    text-align: left;
+    top: 50px;
+    left: 150px;
+    position: absolute;
+}
+.names{
+    color: rgb(13, 19, 33);
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 25px 40px 25px 40px;
+width: 228px;
+height: 58px;
+left: 1046px;
+box-sizing: border-box;
+border: 1px solid rgb(13, 19, 33);
+position: absolute;
+top: 38px;
+
+
+}
+.image1{
+    text-align: center;
+    background-image: url(https://github.com/ProgrammingHero1/B10A1-Challenge-Begins/blob/main/assets/Hero-bg.png?raw=true);
+    left: 0px;
+    right: 0px;
+    top: 140px;
+    gap: 20px;
+    height: 652px;
+    position: absolute;
+    width: 1440px;
+    height: 652px;
+bottom: 4462px;
+}
+.banner-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.838);
+    text-align: center;
+}
+.button{
+    font-size: 20px;
+    color:  white;
+    background: rgb(13, 19, 33);
+    border-radius: 8px;
+    width: 208px;
+height: 66px;
+padding: 21px 24px 21px 24px;
+
+}
+
+/* main part start*/
