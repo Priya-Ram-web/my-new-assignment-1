@@ -1,61 +1,400 @@
-*{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
-    margin:0;
-}
-/*start header part*/
-.name{
-    font-size: 28px;
-    color: rgb(13, 19, 33);
-    text-align: left;
-    top: 50px;
-    left: 150px;
-    position: absolute;
-}
-.names{
-    color: rgb(13, 19, 33);
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 25px 40px 25px 40px;
-width: 228px;
-height: 58px;
-left: 1046px;
-box-sizing: border-box;
-border: 1px solid rgb(13, 19, 33);
-position: absolute;
-top: 38px;
+    }
+    body{
+        font-family: "Azeret Mono", monospace;
+    }
 
+    /* nav-section-styles */
 
+.list-item{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 50px;
+    
 }
-.image1{
-    text-align: center;
-    background-image: url(https://github.com/ProgrammingHero1/B10A1-Challenge-Begins/blob/main/assets/Hero-bg.png?raw=true);
-    left: 0px;
-    right: 0px;
-    top: 140px;
-    gap: 20px;
-    height: 652px;
-    position: absolute;
-    width: 1440px;
-    height: 652px;
-bottom: 4462px;
+.list-item li h2{
+    color: rgb(13, 19, 33);
+font-size: 28px;
+font-weight: 800;
 }
-.banner-text{
-    font-size: 35px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.838);
-    text-align: center;
-}
-.button{
-    font-size: 20px;
-    color:  white;
-    background: rgb(13, 19, 33);
+
+.list-item button{
+    padding: 17px 24px 17px 24px;
+    color: rgb(13, 19, 33);
+    border: 1px solid rgb(13, 19, 33);
     border-radius: 8px;
-    width: 208px;
-height: 66px;
-padding: 21px 24px 21px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;  
+    opacity: 0.8;
+    background-color: white;
+
+}
+/* nav-section-styles(End) */
+
+
+/* header er hero section */
+.hero-section{
+    background-image: url("https://github.com/ProgrammingHero1/B10A1-Challenge-Begins/blob/main/assets/Hero-bg.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 26px;
+    padding: 50px;
+}
+
+#title{
+    color: rgb(13, 19, 33);
+font-size: 39px;
+font-weight: 800;
+line-height: 68px;
+text-align: center;
+margin: 20px 0px;
+}
+
+.title-description{
+    width: 998px;
+}
+.description{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 0.7;
+    padding-bottom: 32px;
+}
+
+.hero-btn button{
+    padding: 21px 24px 21px 24px;
+    border-radius: 8px;
+    
+    background: rgb(13, 19, 33);
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 600;
+
+}
+/* header er hero section (End) */
+
+
+/* main-section-styles */
+
+.main-section{
+    background: rgb(255, 255, 255);
+    padding: 80px 97px 80px 97px;
+    margin-top: 70px;
+}
+
+.main-section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+color: rgb(13, 19, 33);
+font-size: 32px;
+font-weight: 800;
+text-align: center;
+}
+.title{
+    color: rgb(13, 19, 33);
+font-size: 32px;
+font-weight: 800;
+margin-bottom: 24px;
+}
+.p-tag{
+    width: 950px;
+    /* margin-bottom: 48px; */
+}
+
+.main-to-main{
+    display: flex;
+/* width: auto 946px;
+height: auto 336; */
+width: 850px;
+height: 240px;
+padding: 48px;
+justify-content: center;
+margin: 0 auto;
+margin-bottom: 32px;
+
+
+
+}
+.text-section{
+    width: 720px;
+    height: 72px;
+    margin-right: 98px;
+}
+.img-section{
 
 }
 
-/* main part start*/
+/* learn-button */
+.main-section-learn{
+    text-decoration: none;
+        color: rgba(13, 19, 33, 0.7);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        padding: 12px 20px 12px 20px;
+        border: 1px solid rgb(13, 19, 33);
+        opacity: 0.7;
+
+}
+.title-section{
+    width: 500px;
+height: 72px;
+    color: rgba(13, 19, 33, 0.7);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+.description-section{
+    color: rgb(13, 19, 33);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+opacity: 0.7;
+margin-top: 16px;
+margin-bottom: 30px;
+
+}
+/* inspiration-section */
+.youtube-video iframe{
+    box-sizing: border-box;
+border: 30px solid white;
+border-radius: 16px;
+
+border-radius: 16px;
+    margin-top: 48px;
+    width: 1200px;
+    height: 550px;
+}
+
+.Target-section{
+    margin-top: 140px;
+}
+
+.target{
+    display: flex;
+    text-align: left;
+padding: 0px;
+}
+
+
+.card{
+    width: 284px;
+    height: 220px;
+    padding: 40px 40px 40px 40px;
+    margin-left: 24px;
+}
+.card h1{
+    color: rgb(13, 19, 33);
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+margin-bottom: 24px;
+}
+.card p {
+    color: rgb(13, 19, 33);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+opacity: 0.7;
+margin-bottom: 24px;
+}
+.card a {
+    color: rgb(13, 19, 33);
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+.html{
+    background-color: #FFF6F4;
+}
+.css{
+    background-color: #F2F6FE;
+}
+.js{
+    background-color: #FFFDF2;
+}
+.card img{
+    margin-bottom: 24px;
+}
+
+
+
+/* next-target */
+
+
+.next-target{
+margin-top: 110px;
+
+}
+
+.next-target-section{
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 40px;
+    
+}
+
+
+
+
+.card-container-card{
+margin: 0px auto;
+display: flex;
+margin-top: 48px;
+padding: 40px;
+box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 16px;
+background: rgb(255, 255, 255);
+width: 1140px;
+height: 220px;
+
+}
+.card-container-card img{
+    padding: 24px;
+}
+.card-container-card h1{
+    color: rgb(13, 19, 33);
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+margin-bottom: 24px;
+}
+.card-container-card p {
+    color: rgb(13, 19, 33);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+opacity: 0.7;
+margin-bottom: 24px;
+}
+.card-container-card a {
+    color: rgb(13, 19, 33);
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+.Learn{
+    text-decoration-line: underline;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    margin-top: 41px;
+    background-image: url(https://github.com/ProgrammingHero1/B10A1-Challenge-Begins/blob/main/assets/handshake.jpg?raw=true);
+    background-position: 100%;
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+    width: 1140px;
+    height: 314px;
+    margin: 0 auto;
+    margin-top: 41px;
+    border-radius: 16px;
+}
+.footer-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.support-section h2{
+    
+padding-top: 50px;
+color: rgb(255, 255, 255);
+font-size: 32px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+
+
+}
+.support-section p{
+    
+    padding-top: 24px;
+color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+opacity: 0.7;
+
+}
+
+form{
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+input[type="text"]{
+    padding: 10px;
+    width: 548px;
+    border: none;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+button{
+padding: 17px 20px 17px 20px;
+border: none;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 8px;
+background: rgb(255, 255, 255);
+cursor: pointer;
+color: rgb(13, 19, 33);
+font-size: 18px;
+font-weight: 550;
+
+}
+
+.icon img{
+    width: 37.01px;
+    height: 36px;
+    padding: 10px;
+}
+
+.footer-footer{
+   display: flex;
+   justify-content: space-between;
+   width: 1140px;
+height: 36px;
+margin: 0 auto;
+margin-top: 111px;
+margin-bottom: 24px;
+}
+
+.commitment{
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 25px;
+}
